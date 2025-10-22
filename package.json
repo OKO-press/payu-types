@@ -2,6 +2,13 @@
   "name": "@oko-press/payu-types",
   "version": "1.0.0",
   "packageManager": "yarn@4.10.3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OKO-press/payu-types.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/oko-press"
+  },
   "scripts": {
     "build": "openapi-typescript ./openapi.yaml --empty-objects-unknown -o ./dist/index.d.ts",
     "update": "download https://developers.payu.com/europe/resources/payu-gpo-europe-api-ref.yaml > openapi.yaml"
