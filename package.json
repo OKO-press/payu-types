@@ -1,0 +1,19 @@
+{
+  "name": "@oko-press/payu-types",
+  "version": "1.0.0",
+  "packageManager": "yarn@4.10.3",
+  "scripts": {
+    "build": "openapi-typescript ./openapi.yaml --empty-objects-unknown -o ./dist/index.d.ts",
+    "update": "download https://developers.payu.com/europe/resources/payu-gpo-europe-api-ref.yaml > openapi.yaml"
+  },
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "devDependencies": {
+    "download-cli": "^1.1.1",
+    "openapi-typescript": "^7.10.1",
+    "typescript": "^5.9.3"
+  }
+}
