@@ -11,7 +11,8 @@
   },
   "scripts": {
     "build": "openapi-typescript ./openapi.yaml --empty-objects-unknown -o ./dist/index.d.ts",
-    "update": "download https://developers.payu.com/europe/resources/payu-gpo-europe-api-ref.yaml > openapi.yaml"
+    "update": "download https://developers.payu.com/europe/resources/payu-gpo-europe-api-ref.yaml > openapi.yaml",
+    "publish": "yarn npm publish"
   },
   "types": "dist/index.d.ts",
   "files": [
