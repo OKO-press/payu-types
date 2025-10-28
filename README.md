@@ -14,6 +14,9 @@ yarn add -D @oko-press/payu-types
 
 ## Example usage
 
+
+## Openapi generated types
+
 You need to extract types from the generated types like this:
 
 ```ts
@@ -26,4 +29,16 @@ type CreateOrder = NonNullable<
 type CreateOrderResponse = NonNullable<
   paths["/api/v2_1/orders"]["post"]["responses"]["201"]["content"]["application/json"]
 >;
+```
+
+## Custom types
+
+You can also import some custom types.
+
+### Callback
+
+This is what comes in the body of PayU callback requests.
+
+```ts
+import type { CallbackResponseBody } from "@oko-press/payu-types";
 ```
